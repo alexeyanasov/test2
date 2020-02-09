@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+.header{
+    margin-top: 22px;
+}
+.container{
+    max-width: 972px;
+    margin: 0 auto;
+    padding: 0 25px;
+    /* background-color: green; */
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search__form--input{
+    width: 254px;
+    height: 40px;
+    padding: 10px;
+    color: #000;
+}
+.header__search-form{
+    position: relative;
+}
+.search__form--btn{
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    right: 15px;
+    top: 33%;
+    display: block;
+}
+
+.header__phone{
+    padding-top: 22px;
+    padding-left: 40px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    
+}
+.header__phone::before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background-image: url(../img/phone.png);
+}
+.header__phone::after{
+    content: "Звоните нам";
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 33px;
+    display: block;
+}
+.header__cart{
+    border: 1px solid #000;
+    padding-left: 66px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    position: relative;
+    max-width: 186px;
+    text-align: center;
+}
+.header__cart::before{
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    left: 13px;
+    top: 20px;
+    content: "";
+    background-image: url(../img/cart.png);
+}
+.headr__cart--title {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.header__cart--description {
+    font-size: 12px;
+    color: #cccccc;
+    margin-bottom: 3px;
+}
+.header__cart--links a{
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+}
+.navigation{
+    margin-top: 35px;
+    display: block;
+    background-color: #cccccc;
+    box-shadow: 0px 6px 18px #000;
+}
+.navigation__list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.navigation__list--item{
+    list-style: none;
+    position: relative;
+}
+.navigation__list--item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    margin-left: 23px;
+}
+.navigation__list--item a:hover{
+    border-bottom: 0px;
+}
+.navigation__list--item::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    right: -13%;
+    top: -2px;
+    background-color: #fff;
+    display: block;
+}
+.navigation__list--item:last-child::after{
+    display: none;
+}
